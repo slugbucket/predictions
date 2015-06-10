@@ -1,0 +1,716 @@
+body
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75em;
+  font-weight: normal;
+  width: auto;
+}
+
+#banner
+{
+  height: 50px;
+  border: 0px;
+}
+#showuser
+{
+  width: 100%;
+  height: 1.4em;
+  border: 0px;
+  color: #fff;
+  background-color: #6fa853;
+  font-size: 1.2em;
+}
+
+/*
+ * Left navigation box styles
+ */
+#leftnav
+{
+  float: left;
+/*
+  border-right: 0.1em solid #cdcdcd;
+  border-left: 0px none #FFFFFF;
+  border-top: 0px none #FFFFFF;
+  border-bottom: 0px none #FFFFFF;
+  padding: 0.75em 0.75em 0.75em 0.75em;
+  margin: 0.75em 0.75em 0.75em 0.75em;
+ */
+  width: 9em;
+  background-image: url(../images/grad.jpg);
+  background-position: right;
+  background-repeat: repeat-y;
+  color: #000;
+}
+#leftnav ul
+{
+  list-style-type: none;
+  font-size: 1.0em;
+  color: #6fa853;
+  margin: 0;
+  padding: 0;
+  background-position: right;
+}
+#leftnav ul li
+{
+  color: #6fa853;
+/*
+  padding: 0.2em 0em 0.2em 0em;
+ */
+/*
+  border-top: 1px solid #fff;
+  border-bottom: 1px dotted #666;
+  border-left: 10px solid #778;
+ */
+  margin: 0;
+  background-image: url(../images/grad.jpg);
+  background-position: right;
+  font-weight: bold;
+}
+
+#leftnav ul li a
+{
+  color: #666;
+  text-decoration: none;
+  display: block;
+  padding: 0.4em;
+  border-top: 1px solid #fff;
+  border-bottom: 1px dotted #666;
+}
+#leftnav ul li a.selected
+{
+  color: #e02020;
+}
+#leftnav ul li a:hover.selected
+{
+  color: #fff;
+  background-color: #bad26f;
+/*  border-left: 10px solid #448a32 */
+}
+#leftnav ul li a:hover
+{
+  color:#fff;
+  background-color: #bad26f;
+/*   border-left: 10px solid #448a32 */
+  text-decoration:none;
+}
+
+#login
+{
+  padding-top: 1em;
+  padding-left: 7px;
+  background-image: none;
+  background-color: #fff;
+  background-image: url(../images/grad.jpg);
+  background-position: right;
+  background-repeat: repeat-y;
+  font-size: 0.75em;
+}
+#main
+{
+  width: auto;
+}
+
+#content
+{
+  padding: 0.75em 0.00em 0.75em 0.75em;
+  float: left;
+  width: 85%;
+  /* border: 0.1em solid #cdcdcd; */
+}
+
+/*
+ * Tabbed navigation styles
+ */
+#navtabs
+{
+  border-bottom: 1px solid #333366;
+  margin: 0.2em 0.2em 0.4em 0.2em;
+  padding-bottom: 1px;
+  padding-left: 15px;
+  width: auto;
+}
+#navtabs ul, #navtabs li
+{
+  display : inline;
+  list-style-type : none;
+  padding : 0;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+}
+#navtabs ul li.selected
+{
+  border-top : 1px solid #333366;
+  border-left : 1px solid #333366;
+  border-right : 1px solid #333366;
+  border-bottom: 2px solid #ffffff;
+  /* padding: 2px 2px 2px 4px; */
+  padding : 2px 6px 2px 6px;
+  color: #e02020;
+  background-color: #fff;
+  font-size: 0.9em;
+  
+}
+#navtabs a:link, #navtabs a:visited, #navtabs a:active   {
+        background: #eee;
+        border: 1px solid #333366;
+        color: #333366;
+        font-size: 0.9em;
+        font-weight: normal;
+        line-height: 14px;
+        padding: 2px 6px 2px 6px;
+        text-decoration: none;
+}
+#navtabs ul li a:hover
+{
+  color :#333366;
+  background-color: #cfdff0;
+}
+#inner {
+  width: auto;
+}
+#footer
+{
+  width: auto;
+  border: 0.1em #6fa853 solid;
+  background-color: #6fa853;
+  color: #000000;
+  font-size: 1.0em;
+  clear: both;
+  padding: 0.3em;
+  text-align: center;
+}
+
+/*
+ * Form input element styles
+ */
+.button 
+{
+  background-color: #6fa853;
+  color: #fff;
+  font-size: 1.0em;
+  font-weight: bold;
+  border : 0.1em solid #588940;
+  padding: 0.1em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+}
+
+/*
+ * for already chosen predictions
+ */
+.already_predicted
+{
+  color: #ff8080;
+  font-size: 0.75em;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+}
+
+input
+{
+  background-color: #fdfac2;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75em;
+  padding: 0.1em;
+  margin: 0.1em;
+  border: 1px solid #003300;
+}
+input.error
+{
+  border: 1px solid #330000;
+  background-color: #fd8080;
+}
+
+select
+{
+  padding: 1px 2px 1px 2px;
+  margin: 1px;
+  color: #000;
+}
+select.teamlist {
+  width: 100%;
+}
+
+option
+{
+  font-size: 0.75em;
+  padding: 1px;
+  margin: 1px;
+  border: 0px solid #000000;
+}
+.errmsg
+{
+  color: #ff4040;
+  font-size: 1.2em;
+  border: 1px solid #003300;
+}
+.errmsg a:link, .errmsg a:active, .errmsg a:visited
+{
+  color: #ff4040;
+  text-decoration: underline;
+}
+.errmsg a:hover
+{
+  color: #e02020;
+  text-decoration: none;
+}
+
+/* Revised table styling */
+table.tableview
+{
+  background-color:#eee;
+  background-image:url(../images/grad.jpg);
+  background-position:right;
+  background-repeat:repeat-y;
+  width: 100%;
+}
+.tableview th, #matchlist th
+{
+  text-align:left;
+  padding:2px;
+  background-color:#6FA853;
+  color:#FFF;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:0.9em;
+  font-weight:normal;
+}
+.tableview td
+{
+  text-align:left;
+  padding: 0.1em;
+  color:#000;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:0.75em;
+  font-weight:normal;
+  border-bottom:dotted 1px #666;
+  border-top:solid 1px #fff;
+}
+td.dark
+{
+  background-image:url(../images/darkborder.gif);
+  background-repeat:repeat-y;
+  background-position:left;
+  padding-left:15px;
+}
+td.light
+{
+  background-image:url(../images/lightborder.gif);
+  background-repeat:repeat-y;
+  background-position:left;
+  padding-left:15px;
+}
+/* FIXME: remove if using an icon rather than a link */
+.tableview a:link, .tableview a:active, .tableview a:visited
+{
+  color: #000;
+  text-decoration: none;
+}
+.tableview a:hover
+{
+  color: #e02020;
+  text-decoration: underline;
+}
+
+#matchlist table
+{
+ background-color:#eee;
+}
+#matchlist td {
+  padding-right: 0.5em;
+}
+/* Kristin really hates this one! */
+td.pointless
+{
+  border-bottom:none;
+}
+td.stats, td.versus
+{
+  text-align: center;
+}
+td.radio
+{
+  padding-left: 1.8em;
+}
+input.radio, input.checkbox
+{
+  background-color: #eee;
+  border: none;
+}
+#leagues tr.inactive
+{
+  border: 1px solid #330000;
+  background-color: #dff0cf;
+  color: #444;
+}
+#addremlge
+{
+  float: left;
+  padding: 1em;
+  position: relative;
+  top: 0.75em;
+}
+
+#myseason td
+{
+  text-align: center;
+  padding: 0.2em;
+}
+
+/* Styles for group table */
+.grouptable
+{
+  text-align: center;
+}
+
+/* Styles for the graphs */
+#monthgraphs
+{
+  width: 100%;
+  padding: 0.2em;
+/*   border: 1px solid #333366; */
+}
+#monthpredsDiv
+{
+  display: inline;
+  float: left;
+}
+#monthresultsDiv
+{
+  float: left;
+}
+/* Styles for the comments section */
+#comments
+{
+  background-color: #fff;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 1.0em;
+}
+#comments .header
+{
+  background-color: #eee;
+  border: 1px solid #333366;
+}
+#comments .message
+{
+  background-color: #cfdff0;
+  border: 1px solid #333366;
+  vertical-align: top;
+  margin: 0 0 1.0em 0;
+}
+#comments p
+{
+  position: relative;
+  left: 0.4em;
+  top: -0.8em;
+}
+
+/*
+ * Styles for the main summary table
+ */
+#summary
+{
+  background-color: #fff;
+  width: 80%;
+  margin-top: 10px;
+  font-size: 1.0em;
+}
+
+/*
+ * Top five users display
+ */
+#topfive
+{
+  padding-left: 7px;
+  padding-top: 10px;
+  background-image: url(../images/grad.jpg);
+  background-position: right;
+  background-repeat: repeat-y;
+  font-size: 0.75em;
+}
+#topfive table
+{
+  border: 1px solid #333366;
+  background-color: #fff;
+  width: 90%;
+}
+#topfive td
+{
+  padding: 0.2em;
+}
+#topfive th
+{
+  background-color: #6fa853;
+  color: #fff;
+}
+
+/*
+ * User management forms
+ */
+#updatedusers
+{
+  background-color: #fff;
+  font-size: 1.0em;
+  padding: 0px;
+  width: 100%;
+  border: 1px solid #333366;
+}
+
+/* Result that has already been submitted */
+.already_resulted
+{
+  color: #ff8080;
+  font-size: 0.8em;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+}
+
+/*
+ * Styles for expand/contract display elements
+ */
+.contract
+{
+  display: inline;
+  color: #000;
+/*
+  background-color: #fff;
+ */
+  position: relative;
+  left: 0px;
+  top: 1.2em;
+}
+
+.expand
+{
+  display: none;
+  color: #000;
+/*
+  background-color: #6fa853;
+  position: relative;
+  left: 0px;
+  top: 8px;
+ */
+}
+#predictguide {
+  float: left;
+  border: solid #000000 0px;
+  width: 90%;
+}
+#fixturestopredict
+{
+  float: left;
+  border: 0px dotted #000000;
+  margin-right: 2px;
+  width: 75%;
+}
+#leaguetable
+{
+  font-size: 0.7em;
+  float: left;
+  margin-right: 5px;
+  margin-left: 5px
+}
+#leaguetable table
+{
+  background-color: #d0d0d0;
+  padding: 0px;
+  margin: 0px;
+  border: solid #d0d0d0 0px;
+}
+#leaguetable table th
+{
+  color: #ffffff;
+  background-color: #e01010;
+}
+#leaguetable table tr.pale
+{
+  background-color: #ffffff;
+}
+#leaguetable table tr.home
+{
+  background-color: #a0ffa0;
+}
+#leaguetable table tr.away
+{
+  background-color: #a0a0ff;
+}
+#leaguetable table tr.promotion
+{
+  background-color: #de7415;
+}
+#leaguetable table tr.playoff
+{
+  background-color: #d4cd5d;
+}
+#leaguetable table tr.relegation
+{
+  background-color: #536fd9;
+}
+#leaguetable table td
+{
+  border: 0px;
+}
+/* Form guide styles */
+#formguide
+{
+  font-size: 0.7em;
+  width: auto;
+}
+#formguide table
+{
+  background-color: #d0d0d0;
+  padding: 0px;
+  margin: 0px;
+  border: solid #d0d0d0 1px;
+}
+#formguide table th
+{
+  color: #ffffff;
+  background-color: #e01010;
+}
+#formguide table tr.pale
+{
+  background-color: #ffffff;
+}
+#formguide table td
+{
+  border: 0px;
+}
+#userlist
+{
+  float: left;
+  width: 75%;
+}
+#resultspage
+{
+  float: left;
+  margin-right: 10px;
+  clear: both;
+}
+#season
+{
+  float: left;
+  color: #000;
+  background-color: #FFF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.0em;
+  width: 75%;
+  margin-right: 10px;
+}
+#resultlist
+{
+  float: left;
+  color: #000;
+  background-color: #FFF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.0em;
+  width: 75%;
+  margin-right: 10px;
+}
+#fixturesets
+{
+  color: #000;
+  background-color: #FFF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.0em;
+  width: 90%;
+  float: left;
+}
+
+/* Styles for the list of dates fixtures have been played on */
+#season ul, #fixturesets ul
+{
+  list-style-type: none;
+  font-size: 1.0em;
+  color: #6fa853;
+  margin: 0;
+  padding: 0;
+  background-position: right;
+}
+#season ul li, #fixturesets ul li
+{
+  color: #6fa853;
+  margin: 0;
+  font-weight: normal;
+}
+#season ul li a, #fixturesets ul li a
+{
+  color: #666;
+/*
+  background-color: #fff;
+ */
+  text-decoration: none;
+  display: block;
+  padding: 0.2em;
+  border-top: 1px solid #fff;
+  border-bottom: 1px dotted #666;
+}
+#season ul li a.selected, #fixturesets ul li a.selected
+{
+  color: #e02020;
+}
+#season ul li a:hover.selected, #fixturesets ul li a:hover.selected
+{
+  color: #000;
+/*
+  background-color: #6fa853;
+  border-left: 10px solid #448a32 */
+}
+#season ul li a:hover, #fixturesets ul li a:hover
+{
+  color:#000;
+/*
+  background-color: #6fa853;
+   border-left: 10px solid #448a32 */
+  text-decoration:none;
+}
+
+#season table
+{
+  padding: 2px;
+  width: 100%;
+  font-size: 0.8em;
+}
+#season table td.score
+{
+  text-align: center;
+}
+#season tr.greyrow
+{
+  border: 1px solid #330000;
+  background-color: #eee;
+}
+/* To highlight a previous prediction as a correct result */
+#season .outcome
+{
+  background-color: #69e;
+}
+/* To highlight a previous prediction with the correct score differential */
+#season .diffs
+{
+  background-color: #3e3;
+}
+/* To highlight a previous prediction as an exact score */
+#season .exactscore
+{
+  background-color: #e01010;
+}
+/*
+ * Styles for help pages
+ */
+#help
+{
+  text-align: left;
+  font-size: 1.0em;
+}
+#help dt
+{
+  font-weight: bold;
+}
+
+/*
+ * Styles for the list of fixture dates showing predictions made so far
+ */
